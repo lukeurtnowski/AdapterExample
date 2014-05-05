@@ -1,0 +1,12 @@
+﻿@model List<AdaptersExample.DataModel.Post>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var post in Model)
+{
+    <div class="well">
+        <a href="/Home/ViewPost/@post.Id">@post.Author</a><br />
+        <a href="/Home/ViewPost/@post.Id">@post.Title</a><br />
+</div>
+}
